@@ -1,5 +1,6 @@
-import React from "react";
-import { Task } from "./Task";
+import React, { useState } from "react";
+import Task, { TaskFunc } from "./Task";
+
 export class TaskList extends React.Component {
     constructor(props) {
         super(props);
@@ -30,16 +31,57 @@ export class TaskList extends React.Component {
                 <button onClick={this.addTask} className="btn new">Add new task</button>
                     {this.state.tasks.map((item, index) => {
                         return (
-                            <Task
+                            <TaskFunc
+                                key={index}
                                 index={index}
                                 removeTask={this.taskRemove}
                                 updateTask={this.taskEdit}
                             >
                                 {item}
-                            </Task>)
+                            </TaskFunc>)
                 })}
                 </div>
             </div>
         )
     }
+}
+
+export const TaskListFunc = ({}) => {
+  // Hooks useState
+  const [tasks, setTasks] = useState([]);
+  // Functions CRUD
+  const addTask = () => {
+    const newTasks = [...tasks];
+    newTasks.push("New Task");
+    setTasks(newTasks);
+  };
+  const taskEdit = (index, text) => {
+    const newTasks = [...tasks];
+    newTasks[index] = text;
+    setTasks(newTasks);
+  };
+
+  const taskRemove = (index) => {
+    const newTasks = [...tasks];
+    newTasks.splice(index, 1);
+    setTasks(newTasks);
+  };
+    return (
+            <div className="flex">
+                <div className="box">
+                <button onClick={addTask} className="btn new">Add new task</button>
+                    {tasks.map((item, index) => {
+                        return (
+                            <TaskFunc
+                                key={index+''+item}
+                                index={index}
+                                removeTask={taskRemove}
+                                updateTask={taskEdit}
+                            >
+                                {item}
+                            </TaskFunc>)
+                })}
+                </div>
+            </div>
+        )
 }
