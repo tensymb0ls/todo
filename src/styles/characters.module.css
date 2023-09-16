@@ -1,0 +1,67 @@
+.card {
+  color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  flex: 1 2 20vw;
+  flex-basis: 25vw;
+  /* max-width: 47vw; */
+  /* min-width: min-content; */
+  gap: 15px;
+  border: 1px solid white;
+  padding: 30px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.498);
+  line-height: 140%;
+  /* justify-content: space-between; */
+}
+
+.card img {
+  width: 180px;
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+.top_box {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.top_box p {
+  text-align: left;
+  text-shadow: 1px 1px 1px black;
+}
+
+.bottom {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+button {
+  color: aliceblue;
+}
+
+.prim_butt {
+  padding: 5px 25px;
+  background-color: rgb(155, 42, 97);
+}
+
+.second_butt {
+  padding: 5px 35px;
+  background-color: rgb(23, 137, 48);
+}
+
+.characters {
+  padding: 20px;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+.name {
+  font-size: 3em;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
