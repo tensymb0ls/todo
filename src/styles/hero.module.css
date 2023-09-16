@@ -1,3 +1,9 @@
 .hero {
   box-shadow: black 3px 3px 3px;
+  height: 500px;
+}
+.section {
+  float: left;
+  margin-right: 20px;
+  margin-left: 30px;
 }

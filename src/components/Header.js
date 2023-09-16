@@ -1,11 +1,12 @@
 import { Navigation } from "./Navigation"
-
+import logo from '../img/logo.png'
+import styles from '../styles/farGalaxy.module.css'
 export const Header = ({ changePage }) => {
     return (
         <header>
             {/* props drill for changePage */}
             <Navigation changePage={changePage} />
-            <h1 className="text-center py-3">Rocket</h1>
+            <div className={styles.logo}><img src={logo} /></div>
         </header>
     )
 }

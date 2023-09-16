@@ -1,7 +1,7 @@
 import { items } from "../utils/constants"
 export const Navigation = ({ changePage }) => {
     return (
-        <nav className='fixed-top ml-4 mt-2'>
+        <nav className='fixed-top mt-4'>
             <ul className="nav">
                 {items.map(({ text, id }) => (
                     <li

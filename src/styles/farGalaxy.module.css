@@ -1,0 +1,17 @@
+.farGalaxy {
+  font-size: 1.6em;
+  font-weight: 700;
+  line-height: 1.5;
+  text-align: justify;
+  padding: 0 40px;
+  text-shadow: 2px 2px black;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+}
+.logo img {
+  height: 50px;
+}
