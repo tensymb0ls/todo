@@ -1,14 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Poller+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poller+One&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Poller One', cursive;
-    background-image: url(./img/bg.jpg);
-    color: aliceblue;
-    background-attachment: fixed;
+  font-family: "Poller One", cursive;
+  background-image: url(./img/bg.jpg);
+  color: aliceblue;
+  background-attachment: fixed;
+}
+header {
+  background-color: rgba(6, 18, 23, 0.69);
+}
+
+.btn-nav {
+  color: aliceblue !important;
+  background-color: rgb(3, 56, 85);
 }
