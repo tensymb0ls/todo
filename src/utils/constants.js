@@ -78,3 +78,6 @@ fleet is single-handedly destroyed by Ego, who reveals himself
  as Quill's father. Ego invites Quill to return to his home,
  accompanied by Gamora and Drax. Rocket and Groot remain
  to repair the Milano and guard Nebula.....`;
+
+// ** mockapi url
+export const baseURL = 'https://651040523ce5d181df5d128f.mockapi.io/api/v1';

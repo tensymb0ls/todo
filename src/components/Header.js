@@ -6,7 +6,7 @@ export const Header = ({ changePage, title }) => {
         <header>
             {/* props drill for changePage */}
             <Navigation changePage={changePage} />
-            <div className={styles.logo}><img src={logo} />{title}</div>
+            <div className={styles.logo}><img src={logo} alt='main logo' />{title}</div>
         </header>
     )
 }
