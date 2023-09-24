@@ -1,8 +1,10 @@
 import { store } from '../utils/constants';
 import styles from '../styles/store.module.css'
+import { Header } from '../components/Header';
 
 export const Store = () => {
     return (<main>
+        <Header />
         <div className={styles.characters}>
             {store.map(({ name, link, desc, price }) => (
                 <div className={styles.card}>

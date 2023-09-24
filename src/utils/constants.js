@@ -20,10 +20,10 @@ import store8 from '../img/store/8.png'
 import store9 from '../img/store/9.png'
 // * navigation items
 export const items = [
-    { text: 'Home', id: 1 },
-    { text: 'Characters', id: 2 },
-    { text: 'LOR', id: 3 },
-    { text: 'Store', id: 4 }
+    { text: 'Home', id: '/' },
+    { text: 'Characters', id: '/characters' },
+    { text: 'LOR', id: '/lor' },
+    { text: 'Store', id: '/store' }
 ];
 // * images array
 export const friends = [

@@ -1,8 +1,8 @@
 import { ErrorPage } from "./404"
-import { Characters } from "./Characters"
+import { Characters } from "../pages/Characters"
 import { Home } from "./Home"
-import { Lor } from "./Lor"
-import { Store } from "./Store"
+import { Lor } from "../pages/Lor"
+import { Store } from "../pages/Store"
 
 export const Main = ({ page }) => {
     switch (page) {

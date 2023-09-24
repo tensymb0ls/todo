@@ -15,10 +15,15 @@ body {
 header {
   background-color: rgba(6, 18, 23, 0.826);
 }
-
+a {
+  text-decoration: none;
+}
 .btn-nav {
   color: aliceblue !important;
   background-color: rgb(3, 56, 85);
+}
+.btn-nav a {
+  color: aliceblue;
 }
 .nav {
   background-color: rgba(6, 18, 23, 0.826);
