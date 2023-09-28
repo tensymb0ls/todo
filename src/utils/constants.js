@@ -22,7 +22,7 @@ import store9 from '../img/store/9.png'
 export const items = [
     { text: 'Home', id: '/' },
     { text: 'Characters', id: '/characters' },
-    { text: 'LOR', id: '/lor' },
+    { text: 'Users', id: '/lor' },
     { text: 'Store', id: '/store' }
 ];
 // * images array

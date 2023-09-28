@@ -1,0 +1,30 @@
+.userList {
+  list-style: none;
+  background-color: rgba(0, 0, 0, 0.545);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  padding: 0 15px;
+}
+.wrapper {
+  max-width: 1220px;
+  margin: 0 auto;
+}
+.wrapper h1 {
+  text-align: center;
+}
+.userItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  border-top: 1px solid aliceblue;
+}
+.userItem p {
+  margin: 0;
+  padding: 0;
+  align-self: flex-start;
+}
+.userItem img {
+  padding-bottom: 15px;
+}
